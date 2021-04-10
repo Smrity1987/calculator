@@ -1,0 +1,42 @@
+.container {
+    height: 400px;
+    width: 300px;
+    border: 4px solid gray;
+    margin: auto;
+    background-color:lightblue;
+    border-radius: 15px;
+}
+
+input {
+    font-size: 35px;
+}
+
+.first {
+    width: 235px;
+    height: 80px;
+    background-color:gainsboro;
+    border-radius: 10px;
+    font-size: 34px;
+    margin: 20px 0px 30px 30px;
+    /* upor dan niche bam */
+}
+
+.button {
+    background-color:gainsboro;
+    text-align: center;
+    height: 32px;
+    font-size:larger;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.second {
+    margin: 15px 30px 15px 30px;
+    display: grid;
+    grid-gap: 15px 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+    text-align: center;
+}

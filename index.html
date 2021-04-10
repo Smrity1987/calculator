@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <br>
+    <br>
+    <section class="container">
+        <div>
+            <input id="input" class="first" type="text">
+        </div>
+        <div class="second ">
+            
+            <button onclick="clk('(')" class="button">(</button>
+            <button onclick="clk(')')" class="button">)</button>
+            <button onclick="clrdisp()" class="button">C</button>
+            <button onclick="clk('%')" class="button">%</button>
+
+            <button onclick="clk(7)" class="button">7</button>
+            <button onclick="clk(8)" class="button">8</button>
+            <button onclick="clk(9)" class="button">9</button>
+            <button onclick="clk('/')" class="button">/</button>
+
+            <button onclick="clk(4)" class="button">4</button>
+            <button onclick="clk(5)" class="button">5</button>
+            <button onclick="clk(6)" class="button">6</button>
+            <button onclick="clk('*')" class="button">x</button>
+
+            <button onclick="clk(1)" class="button">1</button>
+            <button onclick="clk(2)" class="button">2</button>
+            <button onclick="clk(3)" class="button">3</button>
+            <button onclick="clk('-')" class="button">-</button>
+
+            <button onclick="clk(0)" class="button">0</button>
+            <button onclick="clk('.')" class="button">.</button>
+            <button onclick="eql('=')" class="button">=</button>
+            <button onclick="clk('+')" class="button">+</button>
+
+        </div>
+    </section>
+
+
+    <script>
+        function clk(val) {
+            document.getElementById('input').value=document.getElementById('input').value+val;
+        }
+        function clrdisp()
+        {
+            document.getElementById('input').value="";  
+        }
+        function eql()
+        {
+            var text=document.getElementById('input').value;
+            var result=eval(text);
+            document.getElementById('input').value=result;
+        }
+    </script>
+</body>
+
+</html>
